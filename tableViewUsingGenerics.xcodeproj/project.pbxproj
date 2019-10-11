@@ -12,16 +12,22 @@
 		60EA10F02350DF7100925C4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60EA10EE2350DF7100925C4D /* Main.storyboard */; };
 		60EA10F22350DF7200925C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60EA10F12350DF7200925C4D /* Assets.xcassets */; };
 		60EA10F52350DF7200925C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60EA10F32350DF7200925C4D /* LaunchScreen.storyboard */; };
+		60EA11012350E04800925C4D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA10FF2350E04800925C4D /* TableViewCell.swift */; };
+		60EA11022350E04800925C4D /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60EA11002350E04800925C4D /* TableViewCell.xib */; };
+		60EA11042350E31300925C4D /* UITableViewGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA11032350E31300925C4D /* UITableViewGen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		60EA10E72350DF7100925C4D /* tableViewUsingGenericsAndEnums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewUsingGenericsAndEnums.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60EA10E72350DF7100925C4D /* tableViewUsingGenerics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewUsingGenerics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60EA10EA2350DF7100925C4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60EA10EC2350DF7100925C4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		60EA10EF2350DF7100925C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60EA10F12350DF7200925C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60EA10F42350DF7200925C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60EA10F62350DF7200925C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60EA10FF2350E04800925C4D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		60EA11002350E04800925C4D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		60EA11032350E31300925C4D /* UITableViewGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewGen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +52,7 @@
 		60EA10E82350DF7100925C4D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60EA10E72350DF7100925C4D /* tableViewUsingGenericsAndEnums.app */,
+				60EA10E72350DF7100925C4D /* tableViewUsingGenerics.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,9 +60,10 @@
 		60EA10E92350DF7100925C4D /* tableViewUsingGenericsAndEnums */ = {
 			isa = PBXGroup;
 			children = (
-				60EA10EA2350DF7100925C4D /* AppDelegate.swift */,
-				60EA10EC2350DF7100925C4D /* ViewController.swift */,
 				60EA10EE2350DF7100925C4D /* Main.storyboard */,
+				60EA10FE2350DF7E00925C4D /* Model */,
+				60EA10FD2350DF7C00925C4D /* View */,
+				60EA10FC2350DF7A00925C4D /* Controller */,
 				60EA10F12350DF7200925C4D /* Assets.xcassets */,
 				60EA10F32350DF7200925C4D /* LaunchScreen.storyboard */,
 				60EA10F62350DF7200925C4D /* Info.plist */,
@@ -64,12 +71,38 @@
 			path = tableViewUsingGenericsAndEnums;
 			sourceTree = "<group>";
 		};
+		60EA10FC2350DF7A00925C4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				60EA10EA2350DF7100925C4D /* AppDelegate.swift */,
+				60EA10EC2350DF7100925C4D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		60EA10FD2350DF7C00925C4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60EA11032350E31300925C4D /* UITableViewGen.swift */,
+				60EA10FF2350E04800925C4D /* TableViewCell.swift */,
+				60EA11002350E04800925C4D /* TableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60EA10FE2350DF7E00925C4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		60EA10E62350DF7100925C4D /* tableViewUsingGenericsAndEnums */ = {
+		60EA10E62350DF7100925C4D /* tableViewUsingGenerics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60EA10F92350DF7200925C4D /* Build configuration list for PBXNativeTarget "tableViewUsingGenericsAndEnums" */;
+			buildConfigurationList = 60EA10F92350DF7200925C4D /* Build configuration list for PBXNativeTarget "tableViewUsingGenerics" */;
 			buildPhases = (
 				60EA10E32350DF7100925C4D /* Sources */,
 				60EA10E42350DF7100925C4D /* Frameworks */,
@@ -79,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = tableViewUsingGenericsAndEnums;
+			name = tableViewUsingGenerics;
 			productName = tableViewUsingGenericsAndEnums;
-			productReference = 60EA10E72350DF7100925C4D /* tableViewUsingGenericsAndEnums.app */;
+			productReference = 60EA10E72350DF7100925C4D /* tableViewUsingGenerics.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 60EA10E22350DF7100925C4D /* Build configuration list for PBXProject "tableViewUsingGenericsAndEnums" */;
+			buildConfigurationList = 60EA10E22350DF7100925C4D /* Build configuration list for PBXProject "tableViewUsingGenerics" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				60EA10E62350DF7100925C4D /* tableViewUsingGenericsAndEnums */,
+				60EA10E62350DF7100925C4D /* tableViewUsingGenerics */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60EA10F52350DF7200925C4D /* LaunchScreen.storyboard in Resources */,
+				60EA11022350E04800925C4D /* TableViewCell.xib in Resources */,
 				60EA10F22350DF7200925C4D /* Assets.xcassets in Resources */,
 				60EA10F02350DF7100925C4D /* Main.storyboard in Resources */,
 			);
@@ -135,7 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60EA11012350E04800925C4D /* TableViewCell.swift in Sources */,
 				60EA10ED2350DF7100925C4D /* ViewController.swift in Sources */,
+				60EA11042350E31300925C4D /* UITableViewGen.swift in Sources */,
 				60EA10EB2350DF7100925C4D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		60EA10E22350DF7100925C4D /* Build configuration list for PBXProject "tableViewUsingGenericsAndEnums" */ = {
+		60EA10E22350DF7100925C4D /* Build configuration list for PBXProject "tableViewUsingGenerics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60EA10F72350DF7200925C4D /* Debug */,
@@ -324,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60EA10F92350DF7200925C4D /* Build configuration list for PBXNativeTarget "tableViewUsingGenericsAndEnums" */ = {
+		60EA10F92350DF7200925C4D /* Build configuration list for PBXNativeTarget "tableViewUsingGenerics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60EA10FA2350DF7200925C4D /* Debug */,
